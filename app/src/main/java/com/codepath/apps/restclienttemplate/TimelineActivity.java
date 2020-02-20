@@ -85,6 +85,7 @@ public class TimelineActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+        
     }
 
     @Override
