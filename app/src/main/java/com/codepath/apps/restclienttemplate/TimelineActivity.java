@@ -26,6 +26,7 @@ public class TimelineActivity extends AppCompatActivity {
 
     TwitterClient client;
     RecyclerView rvTweets;
+
     List<Tweet> tweets;
     TweetsAdapter adapter;
     SwipeRefreshLayout swipe_container;
@@ -52,7 +53,7 @@ public class TimelineActivity extends AppCompatActivity {
             }
         });
 
-        rvTweets.findViewById(R.id.rvTweets);
+        rvTweets = findViewById(R.id.rvTweets);
 
         tweets = new ArrayList<>();
         adapter = new TweetsAdapter(this, tweets);
